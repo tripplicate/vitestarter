@@ -1,0 +1,6 @@
+{
+  "extends": ["@antfu/ts"],
+  "rules": {
+    "unused-imports/no-unused-vars": ["error"]
+  }
+}
