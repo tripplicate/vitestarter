@@ -1,0 +1,18 @@
+node_modules
+
+# IDE
+.vscode
+.idea
+
+# Package manager
+.yarn
+
+# Vite
+.vite
+
+# Build 
+build
+
+# Others 
+*.log
+*.local

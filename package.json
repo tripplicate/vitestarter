@@ -1,29 +1,21 @@
 {
-  "name": "@template/vite",
+  "name": "workspace",
   "private": true,
-  "packageManager": "yarn@3.3.1",
+  "packageManager": "yarn@3.2.1",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "postinstall": "husky install",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix"
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "lerna": "^6.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config-ts": "^0.35.3",
-    "@commitlint/cli": "^17.4.4",
+    "@antfu/eslint-config": "^0.37.0",
+    "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
-    "@types/node": "^18.13.0",
-    "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "eslint": "^8.34.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.1",
-    "vite-tsconfig-paths": "^4.0.5"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,json,yaml,yml}": "yarn lint:fix"
+    "eslint": "^8.36.0"
   }
 }
