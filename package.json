@@ -1,7 +1,7 @@
 {
   "name": "workspace",
-  "private": true,
   "packageManager": "pnpm@8.3.1",
+  "private": true,
   "scripts": {
     "postinstall": "husky install",
     "lint:fix": "eslint . --fix"
@@ -10,9 +10,10 @@
     "lerna": "^6.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.37.0",
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
+    "@trpl/eslint-config-documents": "^1.0.0",
+    "@trpl/eslint-config-javascript": "^1.0.4",
     "eslint": "^8.36.0"
   }
 }
