@@ -1,10 +1,7 @@
 {
   "name": "workspace",
   "private": true,
-  "packageManager": "yarn@3.2.1",
-  "workspaces": [
-    "packages/*"
-  ],
+  "packageManager": "pnpm@8.3.1",
   "scripts": {
     "postinstall": "husky install",
     "lint:fix": "eslint . --fix"

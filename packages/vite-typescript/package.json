@@ -1,7 +1,7 @@
 {
   "name": "@template/vite",
   "private": true,
-  "packageManager": "yarn@3.3.1",
+  "packageManager": "pnpm@8.3.1",
   "scripts": {
     "postinstall": "husky install",
     "dev": "vite",
@@ -24,6 +24,6 @@
     "vite-tsconfig-paths": "^4.0.5"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,json,yaml,yml}": "yarn lint:fix"
+    "*.{js,jsx,ts,tsx,md,json,yaml,yml}": "pnpm lint:fix"
   }
 }
