@@ -6,9 +6,6 @@
     "postinstall": "husky install",
     "lint:fix": "eslint . --fix"
   },
-  "dependencies": {
-    "lerna": "^6.5.1"
-  },
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
