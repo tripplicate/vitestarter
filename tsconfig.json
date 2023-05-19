@@ -4,12 +4,12 @@
     "target": "ES2020",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": false,
+    "outDir": "build",
 
     // Modules
     "module": "ES2020",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "types": ["vite/client"],
 
     // Interop Constraints
     "allowSyntheticDefaultImports": true,
@@ -41,7 +41,5 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "useUnknownInCatchVariables": true
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.vite.json" }]
+  }
 }
