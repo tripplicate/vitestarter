@@ -1,0 +1,30 @@
+{
+  "name": "@template/ts-vanilla",
+  "packageManager": "pnpm@8.3.1",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "vite dev",
+    "build": "vite dev",
+    "preview": "vite preview",
+    "lint:js": "eslint . --fix",
+    "lint:css": "stylelint './src/**/*.css' --fix",
+    "lint:all": "pnpm lint:js && pnpm lint:css"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@trpl/eslint-config-documents": "^1.0.0",
+    "@trpl/eslint-config-typescript": "^1.0.6",
+    "@trpl/stylelint-config-default": "^1.0.4",
+    "eslint": "^8.36.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.8"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue,jsom,toml,yaml}": "pnpm lint:js",
+    "*.{css,sass,scss}": "pnpm lint:css"
+  }
+}
