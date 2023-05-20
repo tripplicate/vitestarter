@@ -13,7 +13,7 @@ export const CONSTANTS = {
 };
 
 export default defineConfig(({ mode, }) => {
-  const { HOST, PORT, API_BASE, } = loadEnv(mode, process.cwd(), '');
+  const { HOST, PORT, API_PRIVATE_DEFAULT, } = loadEnv(mode, process.cwd(), '');
 
   const {
     input, outDir, assetsDir, cacheDir, publicDir, envPrefix, chunkFileNames, assetFileNames, entryFileNames,
@@ -25,7 +25,7 @@ export default defineConfig(({ mode, }) => {
       port: Number.parseInt(PORT),
       proxy: {
         '/api': {
-          target: API_BASE,
+          target: API_PRIVATE_DEFAULT,
           changeOrigin: true,
           rewrite: path => path.replace(/^\/api/, ''),
         },

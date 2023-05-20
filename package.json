@@ -1,7 +1,8 @@
 {
-  "name": "workspace",
+  "name": "vitestarter",
   "packageManager": "pnpm@8.3.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "postinstall": "husky install",
     "lint:fix": "eslint . --fix"
