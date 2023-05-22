@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv } from 'vite';
+import { loadEnv } from 'vite';
 
 export const CONSTANTS = {
   input: 'index.html',
@@ -12,7 +12,7 @@ export const CONSTANTS = {
   assetFileNames: '[name]-[hash].[ext]',
 };
 
-export default defineConfig(({ mode, }) => {
+export default ({ mode, }) => {
   const { HOST, PORT, API_PRIVATE_DEFAULT, } = loadEnv(mode, process.cwd(), '');
 
   const {
@@ -47,4 +47,4 @@ export default defineConfig(({ mode, }) => {
       },
     },
   };
-});
+};
