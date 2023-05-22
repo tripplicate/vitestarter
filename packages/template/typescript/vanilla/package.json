@@ -12,12 +12,12 @@
     "lint:all": "pnpm lint:js && pnpm lint:css"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.0",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@trpl/eslint-config-documents": "^1.0.0",
     "@trpl/eslint-config-typescript": "^1.0.6",
     "@trpl/stylelint-config-default": "^1.0.4",
-    "eslint": "^8.36.0",
+    "eslint": "^8.41.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "typescript": "^5.0.4",
