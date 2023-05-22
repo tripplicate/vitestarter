@@ -1,3 +1,8 @@
-import sharableConfig from './vite';
+import { defineConfig, mergeConfig } from 'vite';
+import TsconfigPaths from 'vite-tsconfig-paths';
 
-export default sharableConfig;
+import defaultConfig from './vite';
+
+export default defineConfig(options => mergeConfig(defaultConfig(options), {
+  plugins: [TsconfigPaths()],
+}));
