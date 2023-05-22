@@ -1,0 +1,36 @@
+{
+  "name": "@template/ts-vue",
+  "packageManager": "pnpm@8.3.1",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint . --fix",
+    "lint:css": "stylelint './src/**/*.css' --fix --allow-empty-input",
+    "lint:all": "pnpm lint:js && pnpm lint:css"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@trpl/eslint-config-documents": "^1.0.0",
+    "@trpl/eslint-config-vue": "^1.0.3",
+    "@trpl/stylelint-config-default": "^1.0.4",
+    "eslint": "^8.41.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "stylelint": "^15.6.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.8",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vue-tsc": "^1.6.5"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue,jsom,toml,yaml}": "pnpm lint:js",
+    "*.{css,sass,scss}": "pnpm lint:css"
+  }
+}

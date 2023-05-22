@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    // Language and Environment
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "types": ["vite/client"],
+
+    // Modules
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+
+    // Javascript Support
+    "allowJs": true,
+
+    // Type Checking
+    "strict": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+
+    // If you don't use CSS Modules set to true
+    "noPropertyAccessFromIndexSignature": false,
+    "useUnknownInCatchVariables": true,
+
+    "outDir": "build",
+  }
+}
