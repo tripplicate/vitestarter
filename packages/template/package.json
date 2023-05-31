@@ -1,6 +1,6 @@
 {
   "name": "@vitestarter/template",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Templates for vitestarter",
   "homepage": "https://github.com/tripplicate/vitestarter/packages/template",
   "packageManager": "pnpm@8.6.0",

@@ -1,6 +1,6 @@
 {
   "name": "@vitestarter/config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Configurations for vitestarter",
   "homepage": "https://github.com/tripplicate/vitestarter/packages/config",
   "packageManager": "pnpm@8.6.0",
