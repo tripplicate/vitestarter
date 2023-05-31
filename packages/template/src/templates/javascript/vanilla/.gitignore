@@ -1,0 +1,18 @@
+# Basics
+dist
+build
+coverage
+node_modules
+
+# IDE 
+.vscode
+.idea
+*.iml
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Files
+*.log
