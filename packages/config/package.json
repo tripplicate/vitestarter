@@ -1,0 +1,24 @@
+{
+  "name": "@vitestarter/config",
+  "version": "1.1.0",
+  "description": "Configurations for vitestarter",
+  "homepage": "https://github.com/tripplicate/vitestarter/packages/config",
+  "packageManager": "pnpm@8.6.0",
+  "type": "module",
+  "files": [
+    "./index.js",
+    "./config"
+  ],
+  "peerDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@vitestarter/template",
+  "version": "1.1.0",
+  "description": "Templates for vitestarter",
+  "homepage": "https://github.com/tripplicate/vitestarter/packages/template",
+  "packageManager": "pnpm@8.6.0",
+  "type": "module",
+  "main": "./src/index.js",
+  "files": [
+    "./src"
+  ],
+  "dependencies": {
+    "@vitestarter/config": "workspace:^",
+    "vite": "^4.3.9"
+  }
+}
